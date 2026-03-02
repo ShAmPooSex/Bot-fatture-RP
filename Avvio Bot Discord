@@ -1,0 +1,11 @@
+@echo off
+title Avvio Bot Discord Calcolo
+cd /d "c:\Users\angio\Documents\trae_projects\Bot Calcolo"
+echo Avvio in corso del bot...
+"C:\Users\angio\AppData\Local\Microsoft\WindowsApps\python3.11.exe" bot.py
+if %errorlevel% neq 0 (
+    echo.
+    echo Si e verificato un errore durante l'avvio del bot.
+    echo Controlla che il Token nel file .env sia corretto.
+    pause
+)
